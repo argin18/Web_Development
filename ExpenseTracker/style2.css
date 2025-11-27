@@ -1,0 +1,63 @@
+@media screen and (max-width: 600px) {
+    .container {
+    margin: 10px;
+    padding: 15px;
+  }
+  form {
+    flex-direction: column;
+  }
+
+  form input,
+  form select,
+  form button {
+    width: 100%;
+  }
+
+  .filter {
+    text-align: left;
+  }
+
+  .total-amount {
+    text-align: left;
+    margin-top: 10px;
+  }
+   .expense-table table,
+  .expense-table thead,
+  .expense-table tbody,
+  .expense-table th,
+  .expense-table td,
+  .expense-table tr {
+    display: block;
+    width: 100%;
+  }
+
+  .expense-table thead {
+    display: none;
+  }
+
+  .expense-table tr {
+    margin-bottom: 15px;
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  expense-table td {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 5px;
+    border: none;
+    border-bottom: 1px solid #eee;
+  }
+
+  .expense-table td:last-child {
+    border-bottom: none;
+  }
+
+  .expense-table td::before {
+    content: attr(data-label);
+    font-weight: bold;
+    color: #555;
+  }
+}
+

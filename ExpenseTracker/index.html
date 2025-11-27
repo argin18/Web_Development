@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" href="style2.css">
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Expense Tracker</h1>
+      <form id="expense-form">
+        <input type="text" id="expense-name" placeholder="Expense Name" />
+        <input type="number" id="expense-amount" placeholder="Amount" />
+        <select id="expense-category">
+          <option value="" disabled selected>Select Category</option>
+          <option value="Food">Food</option>
+          <option value="Transport">Transport</option>
+          <option value="Entertainment">Entertainment</option>
+          <option value="Cloth">Cloth</option>
+          <option value="Other">Other</option>
+        </select>
+        <input type="date" id="expense-date" />
+        <button id="add" type="submit">Add Expense</button>
+      </form>
+      <p id="invalid"></p>
+      <div class="expense-table">
+        <table>
+          <thead>
+            <tr>
+              <th>Expense Name</th>
+              <th>Amount</th>
+              <th>Category</th>
+              <th>Date</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody id="expense-list"></tbody>
+        </table>
+        <p class="msg"></p>
+        <div class="total-amount">
+          <strong>Total:</strong> रु <span id="total-amount">0</span>
+        </div>
+      </div>
+      <div class="filter">
+        <label for="filter-category">Filter by Category:</label>
+        <select id="filter-category">
+          <option value="All">All</option>
+          <option value="Food">Food</option>
+          <option value="Transport">Transport</option>
+          <option value="Entertainment">Entertainment</option>
+          <option value="Cloth">Cloth</option>
+          <option value="Other">Other</option>
+        </select>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
