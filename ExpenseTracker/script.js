@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
     list.innerHTML = "";
     expenses.forEach((expense) => {
       let tr = document.createElement("tr");
-    //   tr.classList.toggle("color", editId===expense.id);
+      //   tr.classList.toggle("color", editId===expense.id);
       if (editId === expense.id) tr.classList.add("color");
       tr.innerHTML = `<td>${expense.name}</td>
     <td>${expense.amount.toFixed(2)}</td>
@@ -29,7 +29,10 @@ document.addEventListener("DOMContentLoaded", () => {
   // updating total amount
   const update = () => {
     const total = expenses.reduce((sum, expense) => sum + expense.amount, 0);
-    totalAmt.textContent = total.toLocaleString("en-IN", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+    totalAmt.textContent = total.toLocaleString("en-IN", {
+      minimumFractionDigits: 2,
+      maximumFractionDigits: 2,
+    });
   };
   // save storage
   const saveExpense = () => {
@@ -75,6 +78,15 @@ document.addEventListener("DOMContentLoaded", () => {
     if (!date) {
       invalid.push("Date");
       dateInput.classList.add("error");
+    } else {
+      const real = new Date(date);
+      const today = new Date();
+      today.setHours(0, 0, 0, 0);
+      real.setHours(0, 0, 0, 0);
+      if (today < real) {
+        invalid.push("Future Date");
+        dateInput.classList.add("error");
+      }
     }
 
     if (invalid.length > 0) {
@@ -105,16 +117,6 @@ document.addEventListener("DOMContentLoaded", () => {
         date,
       });
     }
-
-    // creating an object
-    // const expense = {
-    //   id: Date.now(),
-    //   name: eName,
-    //   amount: amount,
-    //   category: category,
-    //   date: date,
-    // };
-
     saveExpense();
     display(expenses);
     update();
