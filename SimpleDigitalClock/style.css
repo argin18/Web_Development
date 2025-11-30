@@ -1,0 +1,63 @@
+/* Import clean futuristic font */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+/* Background */
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #0a0f24, #1a2a6c, #4b79a1);
+  background-size: 300% 300%;
+  animation: bgMove 12s infinite alternate ease-in-out;
+  font-family: "Orbitron", sans-serif;
+}
+
+/* Subtle moving background animation */
+@keyframes bgMove {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+
+/* Clock Box */
+.clockBox {
+  padding: 30px 70px;
+  background: rgba(33, 21, 21, 0.05);
+  border-radius: 20px;
+  backdrop-filter: blur(15px);
+  box-shadow: 
+    0 0 20px rgba(0, 255, 255, 0.5),
+    0 0 40px rgba(0, 255, 255, 0.3),
+    0 0 80px rgba(0, 255, 255, 0.2);
+  animation: float 3s infinite ease-in-out;
+}
+
+/* Clock floating animation */
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
+/* Time text */
+.time {
+  font-size: 4.5rem;
+  color: #00fdfd;
+  text-shadow:
+    0 0 15px #000000,
+    0 0 30px #00fdfd,
+    0 0 60px #00fdfd;
+  letter-spacing: 4px;
+  animation: glowPulse 2.5s infinite alternate;
+}
+
+/* Glow Pulse Animation */
+@keyframes glowPulse {
+  0% {
+    text-shadow: 0 0 10px #00fdfd, 0 0 20px #00fdfd;
+  }
+  100% {
+    text-shadow: 0 0 25px #00fdfd, 0 0 60px #00fdfd;
+  }
+}
