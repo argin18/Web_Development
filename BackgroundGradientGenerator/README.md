@@ -1,4 +1,4 @@
 # Background Gardient Generator
 
 ## Description
-Basically, Background Gardient Generator is a Color generator which is used in css or you  can find about color code.
+Basically, Background Gardient Generator is a Color generator which user can used in finding the best color by generate self and use .
