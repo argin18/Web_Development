@@ -1,0 +1,36 @@
+/* As5 */
+
+.highlight {
+  background-color: green;
+  color: aliceblue;
+  font-size: 1.25rem;
+}
+/* ?as6 */
+#tbl,
+tr,
+td {
+  border: 1px solid black;
+}
+/* as11 */
+.rating {
+  text-align: center;
+  font-size: 40px;
+  cursor: pointer;
+  direction: rtl; /* Right to left so hover works naturally */
+}
+
+.rating span {
+  color: #ccc;
+  transition: color 0.2s;
+}
+
+.rating span.hovered,
+.rating span.selected {
+  color: gold;
+}
+
+.result {
+  text-align: center;
+  font-size: 22px;
+  margin-top: 15px;
+}
