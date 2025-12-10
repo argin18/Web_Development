@@ -1,6 +1,6 @@
 import React from "react";
 import { useForm } from "react-hook-form";
-
+import { Link } from "react-router-dom";
 const SignUp = () => {
   const {
     register,
@@ -94,6 +94,7 @@ const SignUp = () => {
         {/* submit button */}
         <button className="button" type="submit">Sign Up</button>
       </form>
+      <p>I already SingUp <Link className="a" to="/login">Login</Link></p>
     </div>
   );
 };

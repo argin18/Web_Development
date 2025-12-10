@@ -1,4 +1,4 @@
-# WEB DEVELOPMENT
+# WEB DEVELOPMENT:
 - This is my Full-Stack web development repo. where you can find my  basic project to advance project which is i have done in my WEB DEVELOPMENT jurney.
 
 ## Project Topics:-
@@ -11,7 +11,7 @@
 7. Some js related Asignment question(it's relate to real work projects)
 
 
-## Definations
+## Definations:-
 js: java-Script
 1. (js & React): It's mean one project build in js & one in React
 2. (js): It's mean one project build in js
