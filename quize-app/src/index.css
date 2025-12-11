@@ -1,0 +1,87 @@
+/* Main container */
+.box1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #f3f4f6;
+  padding: 20px;
+}
+
+/* Card style */
+.card {
+  background: white;
+  padding: 30px 40px;
+  border-radius: 15px;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.15);
+  width: 400px;
+  text-align: center;
+  animation: fadeIn 0.3s ease;
+}
+
+/* Question Title */
+.title {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Timer */
+.timer {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #e11d48;
+  font-weight: bold;
+}
+
+/* Options Container */
+.optContain {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Option Buttons */
+.option {
+  background: #3b82f6;
+  color: white;
+  padding: 12px;
+  border: none;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.option:hover {
+  background: #2563eb;
+}
+
+/* Restart Button */
+button {
+  background: #16a34a;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  margin-top: 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #15803d;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
