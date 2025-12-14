@@ -12,6 +12,7 @@
 6. Simple DIgital Clock(js)
 7. Some js related Asignment question(it's relate to real work projects)
 8. Quize App (React)
+9. Note App (React)
 
 ## Definations:
 
