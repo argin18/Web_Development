@@ -1,18 +1,25 @@
 import React, { useState } from "react";
-import { X } from 'lucide-react';
+import { Pencil, X } from 'lucide-react';
 
 const Note = () => {
     const [list, setList] = useState([])
     const [title, setTitle] = useState('')
     const [detail, setDetail] = useState('')
+    const [edit, setEdit] = useState(null)
     const submitHandle =(e)=>{
         e.preventDefault();
         const newList=[...list];
-        if((title.trim() && detail.trim()) ==="") return alert("Input should be Fill up...!")
-        newList.push({title,detail})
+        if(title.trim()==="" || detail.trim() ==="") return alert("Input should be Fill up...!")
+          if(edit !== null){
+            newList[edit]={title, detail}
+            setEdit(null)
+          }else{
+
+            newList.push({title,detail})
+          }
+          setList(newList)
         setDetail('')
         setTitle('')
-        setList(newList)
         console.log("form submit success fully " +title +detail)
         console.log(newList)
     }
@@ -21,6 +28,12 @@ const Note = () => {
         const copyList=[...list];
         copyList.splice(ind,1)
         setList(copyList)
+    }
+    const editbtn=(e)=>{
+      setTitle(list[e].title)
+      setDetail(list[e].detail)
+      setEdit(e)
+
     }
   return (
     <div className="  gap-1.5 sm:flex ">
@@ -49,8 +62,9 @@ const Note = () => {
       <div className="grid rounded-xl bg-gray-50 grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-2 mr-0 p-2">
             {
                 list.map((item,ind)=>(
-                    <div key={ind} className="lg:h-64 relative border-2 h-52 rounded-xl overflow-auto p-1.5 border-red-900  ">
-            <X onClick={()=>deletebtn(ind)} size={30} strokeWidth={3} className=" text-4xl hover:bg-red-400 rounded absolute top-2 right-2 z-10  hover:text-white active:scale-95" />
+                    <div key={ind} className="lg:h-64 relative border-2 h-52 rounded-xl  p-1.5 border-red-900  ">
+            <X onClick={()=>deletebtn(ind)} size={30} strokeWidth={3} className=" text-4xl hover:bg-red-400 rounded absolute top-2 right-2  hover:text-white active:scale-95" />
+               <Pencil onClick={()=>editbtn(ind)} size={28} strokeWidth={2.5} className=" text-4xl hover:bg-blue-400 rounded absolute top-10 p-1 right-2 z-10  hover:text-white active:scale-95" />
             <h2 className=" text-2xl font-semibold">{item.title}</h2> 
             <p className="leading-tight ">{item.detail}</p>
         </div>
