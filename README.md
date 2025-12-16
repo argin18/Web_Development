@@ -13,6 +13,7 @@
 7. Some js related Asignment question(it's relate to real work projects)
 8. Quize App (React)
 9. Note App (React)
+10. Image Gallery (React)
 
 ## Definations:
 
