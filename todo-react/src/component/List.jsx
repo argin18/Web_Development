@@ -7,14 +7,16 @@ const List = ({ list, onDelete, onEdit }) => {
       <ul>
         {list.map((item, index) => (
           <li className="list" key={index}>
-            {item}
-            <button className="delete" onClick={() => onDelete(index)}>
-              {" "}
-              <Trash2 size={16} />
-            </button>
-            <button className="edit" onClick={() => onEdit(index)}>
-              <Edit size={16} />
-            </button>
+            <div className=""> {item}</div>
+            <div className="update">
+              <button className="delete" onClick={() => onDelete(index)}>
+                {" "}
+                <Trash2 size={16} />
+              </button>
+              <button className="edit" onClick={() => onEdit(index)}>
+                <Edit size={16} />
+              </button>
+            </div>
           </li>
         ))}
       </ul>

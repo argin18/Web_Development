@@ -35,14 +35,32 @@
   border-radius: 8px;
   margin-right: 10px;
 }
+ul{
+  margin: 3px;
+  padding: 0;
+}
 
 .list{
+display: flex;
+  justify-content: space-between;
+  border-radius: 8px;
+  /* border: 2px solid white; */
+  background-Image:linear-gradient( to right , #afb293, #054788);
   display: flex;
-  gap: 7px;
+  color: rgb(0, 0, 0);
+  font-weight: 700;
+  gap: 9px;
+  font-family: monospace;
+  padding: 4px;
+  margin-bottom: 4px;
   text-align: center;
   font-size: 1.3rem;
 }
 
+.update{
+  display: flex;
+gap: 6px;
+}
 body {
   margin: 0;
   display: flex;
