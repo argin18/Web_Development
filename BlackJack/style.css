@@ -1,0 +1,64 @@
+body {
+  background-image: url('image.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-weight: 700;
+  font-family: serif;
+}
+
+.cont{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.div {
+  align-content: center;
+  background: rgba(255, 255, 255, 0.779);
+  border-radius: 15px;
+  height: 400px;
+  width: 400px;
+  border: 2px solid rgb(179, 179, 179);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+h1{
+  text-decoration: underline rgb(98, 96, 95);
+  text-shadow:1px 1px  ;
+  font-size: 50px;
+  font-family: serif;
+}
+.player{
+  font-size: 20px;
+}
+span{
+  font-size: large;
+}
+.won{
+  color: rgb(4, 85, 31);
+}
+.lost{
+  color: red;
+}
+button{
+  background: rgb(38, 130, 205);
+  width: 120px;
+  border-radius: 15px;
+  height: 40px;
+  font-weight: 700;
+  cursor: pointer;
+}
+button:active{
+   transform: scale(0.9); 
+}
+.btn1:active{
+background: rgb(10, 235, 28);
+}
+.btn2:active{
+background: rgb(195, 253, 21);
+}
