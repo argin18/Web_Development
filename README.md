@@ -14,6 +14,7 @@
 8. Quize App (React)
 9. Note App (React)
 10. Image Gallery (React)
+11. Blackjack card Game(js)
 
 ## Definations:
 
