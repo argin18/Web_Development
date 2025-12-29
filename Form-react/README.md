@@ -5,4 +5,5 @@
 1. Min charecter length 
 2. require field input
 3. correctnes (Like: in email Field you have to enter correct amail format)
-4. Match password require
+4. Match password require 
+5. 
