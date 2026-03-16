@@ -12,7 +12,7 @@
 6. Simple DIgital Clock(js)
 7. Some js related Asignment question(it's relate to real work projects)
 8. Quize App (React)
-9. Note App (React)
+9. Note App (React,nodejs & MOngoDB)
 10. Image Gallery (React)
 11. Blackjack card Game(js)
 12. Library Management System (React)
