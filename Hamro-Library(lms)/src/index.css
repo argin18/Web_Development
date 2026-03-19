@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+<<<<<<< HEAD
+/* span{
+    color: red;
+} */
+=======
+span{
+    color: red;
+}
+>>>>>>> ba683ebe61a805475528541734de3d67edfc42c8
+.profile{
+    color: black;
+}
