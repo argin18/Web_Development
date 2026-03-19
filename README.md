@@ -15,7 +15,7 @@
 9. Note App (React,nodejs & MOngoDB)
 10. Image Gallery (React)
 11. Blackjack card Game(js)
-12. Library Management System (React)
+12. Hamro Library (React, PHP, Mysql)
 13. social Feed(React,nodejs,mongoDB)
 
 ## Definations:
