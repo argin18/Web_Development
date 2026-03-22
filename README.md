@@ -20,8 +20,8 @@
 
 ## Definations:
 
-js: java-Script
-
-1. (js & React): It's mean one project build in js & one in React
-2. (js): It's mean one project build in js
-3. (react): It's mean one project build in React
+1. js => Stand for JavaScript, It's a progrramming language
+2. react => js library use to build Fronted Appication.
+3. PHP => Stand for Hyper preprocessor, It's a progrramming language
+4. MySQL => It's a relational Database.  Also known as Sequal Database.
+5. MongoDB => It's a non-relational Database.  Also known as No-Sequal Database.
